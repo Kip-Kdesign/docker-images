@@ -15,6 +15,8 @@ RUN apk --update add build-base && \
     rm -rf /var/cache/apk/*
 
 # Now install Node
+# See: https://github.com/nodejs/docker-node/blob/11d4e7fb83a52801e177a08c12eeacaf41498a54/10/alpine/Dockerfile
+
 ENV NODE_VERSION 10.11.0
 
 RUN addgroup -g 1000 node \
