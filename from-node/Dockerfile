@@ -4,7 +4,7 @@ ENV NODE_PATH /usr/local/lib/node_modules
 
 RUN \
     apk --no-cache --update add php php-openssl php-json php-mbstring \
-      php-phar php-dom php-ctype php-tokenizer \
+      php-phar php-dom php-ctype php-tokenizer php-session php-xml \
       bash \
     && php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
     && php composer-setup.php --install-dir=/bin --filename=composer \
