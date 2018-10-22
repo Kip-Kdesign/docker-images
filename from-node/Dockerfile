@@ -9,4 +9,6 @@ RUN \
     && rm composer-setup.php \
     \
     && echo "npm..." \
-    && npm install -g babel-cli babel-preset-env sass rollup \
+    && npm install -g babel-cli babel-preset-env sass rollup
+
+WORKDIR /app
